@@ -129,7 +129,7 @@ h3 {
     width: 221px;
     height: 64px;
     margin-top: 40px;
-    display: none;
+    opacity: 0;
 }
 
 .header-img {
@@ -208,7 +208,7 @@ h3 {
 }
 
 .events-item:hover .button-participate {
-    display: flex;
+    opacity: 1;
 }
 
 .events-item:hover .events-item-type {
