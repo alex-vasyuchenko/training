@@ -80,7 +80,7 @@ h3 {
     line-height: 125%;
 }
 
-.header {
+.section-header {
     position: relative;
     height: 852px;
 }
@@ -113,7 +113,8 @@ h3 {
     transition: 0.2s ease;
 }
 
-.button:hover {
+.button:hover, 
+.button-hover {
     color: #FBF138;
     background: #2B3541;
     box-shadow: 0px 13px 24px rgba(70, 86, 106, 0.2);
@@ -124,9 +125,20 @@ h3 {
     height: 64px;
 }
 
+.button-participate {
+    width: 221px;
+    height: 64px;
+    margin-top: 40px;
+    display: none;
+}
+
 .header-img {
+    position: relative;
+}
+
+.header-img img {
     position: absolute;
-    left: 333px;
+    right: 10%;
     top: 0;
     width: 996px;
     height: 852px;
@@ -137,3 +149,68 @@ h3 {
     padding-top: 228px;
 }
 
+.section-events {
+    margin-top: 160px;
+}
+
+.events {
+    display: flex;
+    justify-content: space-between;
+}
+
+.events-item {
+    position: relative;
+    height: 600px;
+}
+
+.events-item .background,
+.events-item-content
+ {
+    position: absolute;
+    width: 367px;
+    height: 600px;
+    top: 0;
+    left: 0;
+}
+
+.events-item .background {
+    background: linear-gradient(180deg, #FBF138 0%, rgba(253, 249, 182, 0) 100%);
+    opacity: 0.3;
+    transition: 0.2s ease;
+}
+
+.events-item:hover .background {
+    opacity: 0.6;
+}
+
+.events-item-type {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding: 10px 20px;
+    background: #FBF138;
+}
+
+.events-item-content {
+    padding: 30px 0 0 30px;
+}
+
+.events-item-date {
+    font-weight: 700;
+    line-height: 150%;
+    opacity: 0.6;
+}
+
+.events-item-title {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 125%;
+}
+
+.events-item:hover .button-participate {
+    display: flex;
+}
+
+.events-item:hover .events-item-type {
+    display: none;
+}
