@@ -55,6 +55,10 @@ body {
     height: 38px;
 }
 
+main {
+    overflow: hidden;
+}
+
 .wrapper {
     max-width: 1143px;
     margin: 0 auto;
@@ -138,7 +142,7 @@ h3 {
 
 .header-img img {
     position: absolute;
-    right: 10%;
+    right: -180px;
     top: 0;
     width: 996px;
     height: 852px;
