@@ -156,19 +156,21 @@ h3 {
 .events {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .events-item {
     position: relative;
     height: 600px;
+    width: 367px;
 }
 
 .events-item .background,
 .events-item-content
  {
     position: absolute;
-    width: 367px;
-    height: 600px;
+    width: 100%;
+    height: 100%;
     top: 0;
     left: 0;
 }
@@ -192,7 +194,8 @@ h3 {
 }
 
 .events-item-content {
-    padding: 30px 0 0 30px;
+    padding: 30px;
+    box-sizing: border-box;
 }
 
 .events-item-date {
@@ -234,6 +237,7 @@ h3 {
 .schedule {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .schedule-item {
