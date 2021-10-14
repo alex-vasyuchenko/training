@@ -214,3 +214,117 @@ h3 {
 .events-item:hover .events-item-type {
     display: none;
 }
+
+.section-schedule {
+    margin-top: 160px;
+}
+
+.schedule-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.schedule-header-date {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 125%;
+}
+
+.schedule {
+    display: flex;
+    justify-content: space-between;
+}
+
+.schedule-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 703px;
+}
+
+.schedule-sub-item:hover {
+    cursor: pointer;
+}
+
+.schedule-sub-item {
+    border: 1px solid rgba(43, 53, 65, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.schedule-today {
+    border: none !important;
+    position: relative;
+}
+
+.schedule-today::before {
+    content: "";
+    position: absolute;
+    display: block;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background: linear-gradient(180deg, #FBF138 0%, rgba(253, 249, 182, 0.45) 100%);    
+    opacity: 0.7;
+    box-shadow: 0px 13px 30px rgba(186, 180, 69, 0.2);
+}
+
+.schedule-description {
+    display: none;
+    line-height: 150%;
+    margin-bottom: 0;
+}
+
+.schedule-today .schedule-description, 
+.schedule-sub-item:hover .schedule-description {
+    display: block;
+}
+
+.schedule-sub-item1 {
+    width: 367px;
+    height: 250px;
+}
+
+.schedule-sub-item2 {
+    width: 367px;
+    height: 433px;
+}
+
+.schedule-sub-item3 {
+    width: 366px;
+    height: 402px;
+}
+
+.schedule-sub-item4 {
+    width: 366px;
+    height: 281px;
+}
+
+.schedule-sub-item5 {
+    width: 367px;
+    height: 309px;
+}
+
+.schedule-sub-item6 {
+    width: 367px;
+    height: 374px;
+}
+
+.schedule-date {
+    opacity: 0.7;
+    text-align: right;
+    margin: 20px 30px 0 0;
+}
+
+.schedule-content {
+    margin: 0 30px 20px 30px;
+}
+
+.schedule-title {
+    font-weight: 700;
+    line-height: 125%;
+}
