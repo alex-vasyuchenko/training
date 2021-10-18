@@ -17,23 +17,23 @@
 <body>
     <header>
         <nav>
-            <div class="nav">
-                <div class="logo">
-                    <a href="index.html"><img src="images/logo.svg" alt="logo"></a>
-                </div>
+            <div class="logo">
+                <a href="index.html"><img src="images/logo.svg" alt="logo"></a>
+            </div>
+            <div class="wrapper">
                 <div class="menu">
                     <ul>
-                        <li><a href="">Мероприятия</a></li>
-                        <li><a href="">Расписание</a></li>
-                        <li><a href="">О&nbsp;компании</a></li>
+                        <li><a href="#">Мероприятия</a></li>
+                        <li><a href="#">Расписание</a></li>
+                        <li><a href="#">О&nbsp;компании</a></li>
                     </ul>
                 </div>
-                <div class="social">
-                    <ul>
-                        <li><a href=""><img src="images/icons/in.svg" alt=""></a></li>
-                        <li><a href=""><img src="images/icons/fb.svg" alt=""></a></li>
-                    </ul>                    
-                </div>
+            </div>
+            <div class="social">
+                <ul>
+                    <li><a href="#"><img src="images/icons/in.svg" alt=""></a></li>
+                    <li><a href="#"><img src="images/icons/fb.svg" alt=""></a></li>
+                </ul>                    
             </div>
         </nav>
     </header>      
@@ -50,7 +50,7 @@
                     </div>
                     <div class="sub-header-item">
                         <h2>тренировок</h2>
-                        <p>в области спортивной<br>физиологии и нутрициологии</p>
+                        <p class="sub-header-decription">в области спортивной<br>физиологии и нутрициологии</p>
                         <a href="#" class="button button-more">Узнать подробнее</a>                        
                     </div>
                 </div>
@@ -157,23 +157,8 @@
         <section class="section-subscribe">
             <div class="subscribe">
                 <div class="subscribe-title">
-                    <h3>Подпишитесь на рассылку</h3>
-                    <svg class="circle subscribe-circle" viewBox="0 0 101 101" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <g filter="url(#filter0_d_139:928)">
-                        <circle cx="50.5" cy="37.5" r="26.5" fill="#FBF138"/>
-                        </g>
-                        <defs>
-                        <filter id="filter0_d_139:928" x="0" y="0" width="101" height="101" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-                        <feOffset dy="13"/>
-                        <feGaussianBlur stdDeviation="12"/>
-                        <feColorMatrix type="matrix" values="0 0 0 0 0.984314 0 0 0 0 0.945098 0 0 0 0 0.219608 0 0 0 0.3 0"/>
-                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_139:928"/>
-                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_139:928" result="shape"/>
-                        </filter>
-                        </defs>
-                    </svg>                        
+                    <div class="circle subscribe-circle"></div>
+                    <h3>Подпишитесь на рассылку</h3>                    
                 </div>
                 <form id="subscribe-form">
                     <div class="form-item">
@@ -188,8 +173,69 @@
                 </form>
             </div>
         </section>
+        <div class="wrapper">
+            <section class="section-about">
+                <div class="about-header">
+                    <div class="about-header-item">
+                        <h3>О компании</h3>
+                        <p class="about-description">Наша компания является одной из немногих, кто предлагает фитнес услуги онлайн! Оставайтесь с нами и вы сами увидите, что мы проводим не только онлайн-тренировки.</p>
+                        <a href="#" class="button button-about">Записаться</a>
+                    </div>
+                    <div class="about-header-item">
+                        <img class="about-img" src="images/about.jpg" alt="About">
+                    </div>                
+                </div>
+                <div class="about-items">
+                    <div class="about-item">
+                        <p class="about-item-title">Экономия времени</p>
+                        <p class="about-item-description">Не нужно тратить время на дорогу</p>
+                    </div>
+                    <div class="about-item">
+                        <p class="about-item-title">Индивидуальный подход</p>
+                        <p class="about-item-description">Внимание тренера пренадлежит&nbsp;только вам</p>
+                    </div>
+                    <div class="about-item">
+                        <p class="about-item-title">Экономия денег</p>
+                        <p class="about-item-description">Средняя цена одной тренировки - 700₽</p>
+                    </div>
+                    <div class="about-item">
+                        <p class="about-item-title">Опытный персонал</p>
+                        <p class="about-item-description">Стаж работы у наших тренеров от 5 лет</p>
+                    </div>
+                </div>    
+            </section>    
+        </div>
     </main>
-    <footer></footer>
+    <footer>
+        <div class="wrapper">
+            <div class="footer-menu">
+                <div>
+                    <a href="#"><img src="images/logo.svg" alt="Logo"></a>
+                </div>
+                <div class="menu">
+                    <ul>
+                        <li><a href="#">Мероприятия</a></li>
+                        <li><a href="#">Расписание</a></li>
+                        <li><a href="#">О&nbsp;компании</a></li>
+                    </ul>
+                </div>
+                <div class="contacts">
+                    <div class="circle footer-circle"></div>
+                    <a href="mailto:info@freefit.com">info@freefit.com</a>
+                </div>
+                <div class="social">
+                    <ul>
+                        <li><a href="#"><img src="images/icons/in.svg" alt=""></a></li>
+                        <li><a href="#"><img src="images/icons/fb.svg" alt=""></a></li>
+                    </ul>                    
+                </div>         
+            </div>
+            <div class="footer">
+                <p>&copy; 2020, Все права защищены</p>
+                <p>Сделано в рамках курса учебной платформы <a class="footer-link" href="#">Frontend Blok</a></p>
+            </div>
+        </div>
+    </footer>
 
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/code.js"></script>
