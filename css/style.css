@@ -50,9 +50,14 @@ body {
     margin-left: 30px;
 }
 
+.social img {
+    transition: 0.2s ease;
+}
+
 .nav .social img {
     width: 30px;
     height: 30px;
+    opacity: 0.8;    
 }
 
 .nav-mobile .social li:last-child {
@@ -67,6 +72,7 @@ body {
 .social img:hover {
     width: 38px;
     height: 38px;
+    opacity: 1;
 }
 
 main {
@@ -288,13 +294,6 @@ h3 {
     flex-wrap: wrap;
 }
 
-.schedule-item {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 703px;
-}
-
 .schedule-sub-item:hover {
     cursor: pointer;
 }
@@ -304,6 +303,10 @@ h3 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+
+.schedule-sub-item:first-child {
+    margin-bottom: 20px;
 }
 
 .schedule-today {
@@ -392,8 +395,11 @@ h3 {
 }
 
 .subscribe-title {
-    position: relative;
     margin-top: 80px;    
+}
+
+.subscribe-title-item {
+    position: relative;
 }
 
 .circle {
@@ -517,7 +523,7 @@ h3 {
 }
 
 .section-about {
-    margin-top: 160px;
+    margin-top: 157px;
 }
 
 .about-header {
@@ -661,6 +667,10 @@ footer .social img {
 
 .header-mobile {
     display: none;
+}
+
+.form-item-submit {
+    display: none;        
 }
 
 @media (max-width: 900px) {
@@ -816,12 +826,159 @@ footer .social img {
         margin-top: 45px;
     }
 
+    .schedule {
+        display: block;
+    }
+
+    .schedule-header h3 {
+        margin-bottom: 17px;
+    }
+
     .schedule-header-date {
         font-weight: 700;
         font-size: 16px;
         line-height: 120%;
         opacity: 0.7;
-        margin-top: 14px;
+        margin-top: 22px;
+    }    
+
+    .schedule-date {
+        font-size: 16px;
+        line-height: 150%;
+        text-align: right;
+        margin: 22px 20px 0 0;
+    }    
+
+    .schedule-content {
+        margin: 0 20px 20px 20px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }    
+
+    .schedule-img-wrapper {
+        min-width: 56px;
+    }
+
+    .schedule-sub-item {
+        margin-bottom: 17px !important;
+    }
+
+    .schedule-title {
+        font-weight: 700;
+        line-height: 120%;
+        margin-bottom: 0;
+        margin-top: 0;
+    }    
+
+    .schedule-description {
+        font-size: 12px;
+        line-height: 150%;
+    }
+
+    .schedule-today .schedule-content, 
+    .schedule-sub-item:hover .schedule-content {
+        align-items: flex-start;
+    }
+
+    .schedule-today .schedule-content {
+        margin-top: 55px;
+    }
+
+    .schedule-sub-item1,
+    .schedule-sub-item2,
+    .schedule-sub-item3,
+    .schedule-sub-item4,
+    .schedule-sub-item5,
+    .schedule-sub-item6 {
+        width: 100%;
+        height: auto;
+        min-height: 114px;
+    }    
+
+    .schedule-sub-item1 .schedule-img {
+        width: 39px;
+        height: 39px;
+    }
+
+    .schedule-sub-item2 .schedule-img {
+        width: 34px;
+        height: 53px;
+    }
+
+    .schedule-sub-item3 .schedule-img {
+        width: 23px;
+        height: 45px;
+    }
+
+    .schedule-sub-item4 .schedule-img {
+        width: 39px;
+        height: 37px;
+    }
+
+    .schedule-sub-item5 .schedule-img {
+        width: 46px;
+        height: 25px;
+    }
+
+    .schedule-sub-item6 .schedule-img {
+        width: 35px;
+        height: 40px;   
+    }
+
+    .subscribe-circle {
+        top: 13px;
+        left: 3px;
+        width: 31px;
+        height: 31px;
+    }
+
+    .subscribe-title {
+        margin-top: 0;    
+        padding-top: 31px;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .subscribe-title-item {
+        position: relative;
+        width: 230px;
+    }    
+
+    #email {
+        line-height: 150%;
+        font-size: 18px;
+        width: 100%;
+        margin-right: 0;
+    }
+    
+    #subscribe-form {
+        padding: 0 10px;
+        margin-top: 25px;
+    }
+
+    .form-item {
+        margin-bottom: 10px;
+        padding: 0;
+    }    
+
+    .form-item-email input[type="submit"] {
+        display: none;
+    }
+
+    .form-item-submit {
+        display: block;
+        margin-top: 40px;
+    }
+
+    .form-item-submit input[type="submit"] {
+        width: 100%;
+    }
+
+    .section-subscribe {
+        margin-top: 74px;
+        height: 416px;
+        display: block;
     }    
 }
 
