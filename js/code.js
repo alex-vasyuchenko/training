@@ -13,4 +13,17 @@ $("#subscribe-form").on("submit", function(){
     }
 
     return valid;
-  })
+});
+
+$(".menu-button").click(function() {
+    $(".mobile-menu").show();
+});
+
+$(".close-menu").click(function() {
+    $(".mobile-menu").hide();
+});
+
+$(".mobile-menu-content a").click(function() {
+    $(".mobile-menu").hide();
+    return true;
+});

@@ -24,9 +24,9 @@
                 <div class="wrapper">
                     <div class="menu">
                         <ul>
-                            <li><a href="#">Мероприятия</a></li>
-                            <li><a href="#">Расписание</a></li>
-                            <li><a href="#">О&nbsp;компании</a></li>
+                            <li><a href="#events">Мероприятия</a></li>
+                            <li><a href="#schedule">Расписание</a></li>
+                            <li><a href="#about">О&nbsp;компании</a></li>
                         </ul>
                     </div>
                 </div>
@@ -41,8 +41,10 @@
                 <div class="logo">
                     <a href="index.html"><img src="images/logo.svg" alt="Logo"></a>
                 </div>
-                <div class="menu-button">
-                    <a href="#"><img src="images/icons/menu.svg" alt="Menu"></a>
+                <div>
+                    <button class="menu-button">
+                        <img src="images/icons/menu.svg" alt="Menu">
+                    </button>
                 </div>
                 <div class="social">
                     <ul>
@@ -52,7 +54,27 @@
                 </div>    
             </div>
         </nav>
-    </header>      
+    </header>   
+    <div class="mobile-menu">
+        <div class="mobile-menu-background"></div>
+        <div class="mobile-menu-content">
+            <div class="mobile-menu-header">
+                <a href="#"><img src="images/logo.svg" alt="Logo"></a>
+                <button class="close-menu">
+                    <img src="images/icons/close.svg" alt="Close">
+                </button>
+            </div>
+            <ul class="mobile-menu-items">
+                <li><a href="#events">Мероприятия</a></li>
+                <li><a href="#schedule">Расписание</a></li>
+                <li><a href="#about">О&nbsp;компании</a></li>
+            </ul>
+            <ul class="social">
+                <li><a href="#"><img src="images/icons/in.svg" alt=""></a></li>
+                <li><a href="#"><img src="images/icons/fb.svg" alt=""></a></li>
+            </ul>                    
+        </div>
+    </div>
     <main>
         <div class="wrapper">            
             <section class="section-header">
@@ -84,6 +106,7 @@
                 </div>
             </section>    
             <section class="section-events">
+                <a name="events"></a>
                 <h3>Ближайшие события</h3>
                 <div class="events">
                     <div class="events-item">
@@ -128,6 +151,7 @@
                 </div>
             </section>
             <section class="section-schedule">
+                <a name="schedule"></a>
                 <div class="schedule-header">
                     <h3>Расписание<br>тренировок</h3>
                     <p class="schedule-header-date">22 - 28 июня</p>
@@ -240,6 +264,7 @@
         </section>
         <div class="wrapper">
             <section class="section-about">
+                <a name="about"></a>
                 <div class="about-header">
                     <div class="about-header-item">
                         <h3>О&nbsp;компании</h3>
