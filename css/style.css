@@ -626,7 +626,7 @@ footer .social {
 
 footer .social ul {
     width: 140px;
-    justify-content: end;
+    justify-content: flex-end;
 }
 
 footer .social img {
@@ -722,7 +722,7 @@ footer .social img {
 
 .mobile-menu-content .social {
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
     margin-top: 40px;
 }
 
