@@ -589,6 +589,7 @@ footer {
 
 .footer-menu .menu {
     margin-left: 67px;
+    margin-right: 100px;
 }
 
 .footer-menu .menu li {
@@ -606,7 +607,6 @@ footer {
 }
 
 .contacts {
-    margin-left: 208px;
     position: relative;
 }
 
@@ -625,7 +625,7 @@ footer .social {
 }
 
 footer .social ul {
-    width: 140px;
+    width: 90px;
     justify-content: flex-end;
 }
 
