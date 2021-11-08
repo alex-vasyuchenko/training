@@ -3,27 +3,29 @@ function isEmail(email) {
     return regex.test(email);
 }
 
-$("#subscribe-form").on("submit", function(){
-    const email = $("#email").val();
+document.getElementById("subscribe-form").onsubmit = function(){
+    const email = document.getElementById("email").value;
     const valid = isEmail(email);
     
     if (!valid) {
-        $("#email").addClass('email-error');
-        $(".email-error-text").show();
+        document.getElementById("email").classList.add('email-error');
+        document.querySelector(".email-error-text").style.display = 'block';
     }
 
     return valid;
-});
+};
 
-$(".menu-button").click(function() {
-    $(".mobile-menu").show();
-});
+function showMenu() {
+    document.querySelector(".mobile-menu").style.display = 'block';
+}
 
-$(".close-menu").click(function() {
-    $(".mobile-menu").hide();
-});
+function hideMenu() {
+    document.querySelector(".mobile-menu").style.display = 'none';
+}
 
-$(".mobile-menu-content a").click(function() {
-    $(".mobile-menu").hide();
-    return true;
-});
+document.querySelector(".menu-button").onclick = showMenu;
+document.querySelector(".close-menu").onclick = hideMenu;
+
+document.querySelectorAll(".mobile-menu-content a").forEach(function(el){
+    el.onclick = hideMenu;
+})
