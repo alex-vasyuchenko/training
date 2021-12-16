@@ -950,7 +950,7 @@ footer .social img {
     }    
 
     .schedule-img-wrapper {
-        min-width: 56px;
+        flex: 0 0 56px;
     }
 
     .schedule-sub-item {
